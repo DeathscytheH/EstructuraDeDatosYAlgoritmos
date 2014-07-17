@@ -135,3 +135,17 @@ Demuestra la comprension de listas para obtener la lista:
 """
 
 print [2**e for e in range(9)]
+
+#R-1.12
+
+"""
+Python incluye una funcion llamada choice(data) que regresa un elemento al azar 
+de una lista no vacia. El modulo random incluye una funcion mas basica llamada 
+randrange, esta regresa un valor al azar del rango dado. Implementa tu propia 
+version de la funcion choice.
+"""
+
+def my_choice(data):
+    from random import randrange   
+    return data[randrange(len(data))]
+
